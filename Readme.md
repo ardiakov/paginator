@@ -53,6 +53,8 @@ Paginator
 
 - Call Paginator
     ```
+     $page - page number from request (int)
+    
      Paginator::create()
         ->setDataProvider(new DoctrineDataProvider($qb, Page::create($page,6)))
         ->paginate();
