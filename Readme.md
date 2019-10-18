@@ -1,8 +1,9 @@
-# Пагинатор
+Paginator
+---
 
-- Имплементировать DataProviderInterface
+- Need to implement DataProviderInterface
 
-    Пример реализации DataProvider-а для Doctrine:
+    Example DataProvider for Doctrine ORM:
 
     ```
     class DoctrineDataProvider implements DataProviderInterface
@@ -50,9 +51,23 @@
     }
     ```
 
-- Вызов пагинатора 
+- Call Paginator
     ```
      Paginator::create()
         ->setDataProvider(new DoctrineDataProvider($qb, Page::create($page,6)))
         ->paginate();
     ```
+
+
+Result
+---
+
+```
+[
+    totalItems: 124,
+    totalPages: 10,
+    currentPage: 1,
+    data: []
+]
+
+```
