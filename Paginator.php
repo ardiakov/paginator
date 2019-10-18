@@ -20,20 +20,18 @@ class Paginator
         return $this;
     }
 
-    public function setCurrentPage(Page $page): self
+    public function countPages(): int
     {
-        $this->currentPage = $page;
-
-        return $this;
+        return (int)ceil($this->dataProvider->countItems() / $this->dataProvider->getCurrentPage()->getLimit());
     }
 
-    public function paginate(): PaginatorResult
+    public function paginate(): array
     {
-        return new PaginatorResult(
-            $this->dataProvider->countItems(),
-            $this->dataProvider->countPages(),
-            $this->dataProvider->getData(),
-            $this->dataProvider->getCurrentPage()->getPage()
-        );
+        return [
+            'totalItems' => $this->dataProvider->countItems(),
+            'totalPages' => $this->countPages(),
+            'data' => $this->dataProvider->getData(),
+            'currentPage' => $this->dataProvider->getCurrentPage()->getPage(),
+        ];
     }
 }

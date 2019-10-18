@@ -6,8 +6,6 @@ namespace Ardiakov\Paginator;
 
 interface DataProviderInterface
 {
-    public function countPages();
-
     public function getData(): iterable;
 
     public function countItems(): int;
