@@ -13,6 +13,11 @@
     "require": {
         "php": "^7.1"
     },
+    "autoload": {
+        "psr-4": {
+            "Ardiakov\\Paginator\\": ""
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "^6.4"
     }
