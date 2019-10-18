@@ -1,0 +1,19 @@
+{
+    "name": "ardiakov/paginator",
+    "description": "Paginator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Diakov",
+            "email": "adiakov.work@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": "^7.1",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    }
+}
