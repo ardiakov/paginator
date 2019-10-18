@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Services\Paginator\Normalizer;
+namespace Ardiakov\Paginator\Normalizer;
 
-use App\Services\Paginator\PaginatorResult;
+use Ardiakov\Paginator\PaginatorResult;
 use Symfony\Component\Serializer\Normalizer\ContextAwareNormalizerInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerAwareTrait;

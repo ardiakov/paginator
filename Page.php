@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Services\Paginator;
+namespace Ardiakov\Paginator;
 
-use App\Services\Paginator\DataProviders\DoctrineDataProvider;
+use Ardiakov\Paginator\DataProviders\DoctrineDataProvider;
 
 class Page
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Services\Paginator\DataProviders;
+namespace Ardiakov\Paginator\DataProviders;
 
 use App\Services\Paginator\DataProviderInterface;
 use App\Services\Paginator\Page;
